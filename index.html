@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ad Demo</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 0; background: #f6f6f6; color: #222; }
+    header { background: #111; color: #fff; padding: 16px 24px; }
+    main { max-width: 900px; margin: 24px auto; padding: 0 16px; }
+    .slot { margin: 24px auto; text-align: center; min-height: 90px;
+            border: 2px dashed #bbb; display: flex; align-items: center;
+            justify-content: center; background: #fff; }
+    article { background: #fff; padding: 20px; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <header><h1>My Demo Site</h1></header>
+
+  <main>
+    <!-- AD SLOT 1: banner (728x90) -->
+    <div class="slot" id="slot-top">
+      <!-- PASTE <ins ...></ins> FOR ZONE 1 HERE -->
+      <span>Ad slot 1</span>
+    </div>
+
+    <article>
+      <h2>Sample article</h2>
+      <p>This is placeholder content so you can see how the ads sit on a real page.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </article>
+
+    <!-- AD SLOT 2: rectangle (300x250) -->
+    <div class="slot" id="slot-bottom" style="min-height:250px;">
+      <!-- PASTE <ins ...></ins> FOR ZONE 2 HERE -->
+      <span>Ad slot 2</span>
+    </div>
+  </main>
+
+  <!-- PASTE THE REVIVE SCRIPT ONCE HERE, e.g.:
+  <script async src="//ads.goselr.com/www/delivery/asyncjs.php"></script>
+  -->
+</body>
+</html>
