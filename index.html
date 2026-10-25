@@ -8,11 +8,13 @@
     body { font-family: system-ui, sans-serif; margin: 0; background: #f6f6f6; color: #222; }
     header { background: #111; color: #fff; padding: 16px 24px; }
     main { max-width: 900px; margin: 24px auto; padding: 0 16px; }
-    .slot {
+.slot {
   display: flex;
+  flex-wrap: wrap;        /* stack on narrow screens */
   justify-content: center;
+  align-items: center;
+  gap: 16px;
   max-width: 100%;
-  overflow: hidden;      /* stops a too-wide ad from breaking the page */
 }
 .slot ins {
   display: block;
@@ -20,7 +22,7 @@
 }
 .slot img {
   max-width: 100%;
-  height: auto;          /* image banners shrink to fit */
+  height: auto;
 }
 /* reserve space so content doesn't jump when the ad loads */
 .slot-banner { min-height: 90px; }
