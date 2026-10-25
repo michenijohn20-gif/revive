@@ -8,9 +8,23 @@
     body { font-family: system-ui, sans-serif; margin: 0; background: #f6f6f6; color: #222; }
     header { background: #111; color: #fff; padding: 16px 24px; }
     main { max-width: 900px; margin: 24px auto; padding: 0 16px; }
-    .slot { margin: 24px auto; text-align: center; min-height: 90px;
-            border: 2px dashed #bbb; display: flex; align-items: center;
-            justify-content: center; background: #fff; }
+    .slot {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  overflow: hidden;      /* stops a too-wide ad from breaking the page */
+}
+.slot ins {
+  display: block;
+  max-width: 100%;
+}
+.slot img {
+  max-width: 100%;
+  height: auto;          /* image banners shrink to fit */
+}
+/* reserve space so content doesn't jump when the ad loads */
+.slot-banner { min-height: 90px; }
+.slot-rect   { min-height: 250px; }
     article { background: #fff; padding: 20px; border-radius: 8px; }
   </style>
 </head>
